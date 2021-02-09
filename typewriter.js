@@ -1,14 +1,16 @@
 "use strict";
 
-const text = document.querySelector(".typewritten").textContent;
-const lastLetter;
+let text = document.querySelector(".typewritten").textContent;
 
 function init() {
   console.log("init");
 
   //get the text from somewhere
 
+  console.log(text);
+
   //clear the HTML area
+  document.querySelector(".typewritten").textContent = null;
 
   //start loop
 
