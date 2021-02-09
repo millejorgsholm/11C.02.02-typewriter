@@ -1,30 +1,25 @@
 "use strict";
 
-let text = document.querySelector(".typewritten").textContent;
+window.addEventListener("DOMContentLoaded", clearHTML);
 
-function init() {
-  console.log("init");
+const getText = document.querySelector(".typewritten").textContent;
+let n = 0;
 
-  //get the text from somewhere
-
-  console.log(text);
-
-  //clear the HTML area
-  document.querySelector(".typewritten").textContent = null;
-
-  //start loop
+//run clearHTML
+function clearHTML() {
+  console.log("clearHTML");
+  document.querySelector(".typewritten").textContent = "";
 
   loop();
 }
 
+//run loop
 function loop() {
   console.log("loop");
-  //show the N'th letter
-  // - set textContent to substring of 0 to N
-  //increment N
 
-  //wait before calling loop() again
-  if (something) {
-    setTimeout(loop, 500);
+  if (n < getText.length) {
+    document.querySelector(".typewritten").textContent += getText.charAt(n);
+    n++;
+    setTimeout(loop, 150);
   }
 }
