@@ -1,3 +1,3 @@
 # typewriter
 
-https://millejorgsholm.github.io/typewriter/typerwriter.html
+https://millejorgsholm.github.io/typewriter/typewriter.html
